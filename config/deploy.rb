@@ -37,6 +37,12 @@ set :ssh_options, {
 set :keep_releases, 5
 
 ############################################
+# Setup ignores
+############################################
+
+set :wp_ignore, %w{/lib /config Capfile Rakefile Gemfile Gemfile.lock readme.md .gitattributes .gitignore .gitmodules}
+
+############################################
 # Linked files and directories (symlinks)
 ############################################
 
